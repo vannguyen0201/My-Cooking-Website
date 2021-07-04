@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #222831;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.hero {
+    color: #eeeeee;
+    padding: 200px 100px 50px;
+    background-image: url("/images/hero-image.jpg");
+    font-family: 'Raleway', sans-serif;
+    text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color);
+}
+
+.more {
+    text-align: center;
+}
+
+.learnMore {
+    text-shadow: none;
+    font-weight: bold;
+    margin: 0 auto;
+    border-color: #eeeeee;
+}
+
+.dish {
+    padding: 30px;
+    color: var(--primary-color);
+    transition: all 200ms ease-in-out;
+}
+
+.dish:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 100px 30px 30px;
+    }
+    .description {
+        font-size: 15px;
+    }
+}
