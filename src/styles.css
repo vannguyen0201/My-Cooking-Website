@@ -4,11 +4,76 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 h1 {
     font-weight: bold;
+}
+
+nav {
+    padding: 10px 50px ;
+    background: var(--primary-color);
+    font-family:'Raleway', sans-serif;
+}
+  
+nav ul {
+padding: 0;
+margin: 0;
+}
+
+nav li {
+display: inline;
+list-style: none;
+line-height: 25px;
+margin-left: 20px;
+}
+
+nav a {
+text-decoration: none;
+color: #f2f2f2;
+transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+color: var(--secondary-color);
+}
+
+footer {
+    margin: 60px 0;
+}
+
+footer .contact-box {
+background: var(--primary-color);
+color:#f2f2f2;
+padding: 30px 80px;
+margin: 0 100px;
+border-radius: 10px;
+}
+
+footer .contactMe {
+    background: var(--secondary-color);
+    color:#f2f2f2;
+}
+
+footer .contactMe:hover {
+    background: #f2f2f2;
+}
+
+footer .social-links a {
+margin: 0 20px;
+color: #f2f2f2;
+background: var(--primary-color);
+padding: 10px 17px;
+border-radius: 55%;
+font-size: 25px;
+transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+color: var(--primary-color);
+background: var(--secondary-color);
 }
 
 .hero {
@@ -43,7 +108,12 @@ h1 {
     text-shadow: none;
     font-weight: bold;
     margin: 0 auto;
-    border-color: #eeeeee;
+}
+
+.learnMore:hover {
+    background: var(--secondary-color);
+    color: #f2f2f2;
+    border-color: var(--secondary-color);
 }
 
 .recipes {
@@ -61,16 +131,24 @@ h1 {
 }
 
 .about {
-    background: var(--primary-color);
+    background-image: url("/images/hero-about.jpg");
+    background-size: 100%;
+    padding: 200px 20px 50px;
+    text-align: center;
+}
+
+.about span {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    padding: 20px 40px;
 }
 
 .information {
-    margin-top: 80px;
-    margin-right: 50px;
-    margin-left: -250px;
-    padding: 30px;
+    margin: 80px 100px;
+    padding: 15px;
+    color: var(--primary-color);
+    text-align: center;
     background: var(--secondary-color);
-    color: #f2f2f2;
 }
 
 .information p {
@@ -96,17 +174,31 @@ h1 {
     color: #f2f2f2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+    nav {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    nav li {
+        margin-left: 10px;
+        line-height: 20px;
+    }
     .hero {
         padding: 100px 30px 30px;
     }
     .description {
         font-size: 15px;
     }
+    .about {
+        background: var(--primary-color);
+        padding-top: 100px
+    }
+    .about span {
+        font-size:20px;
+        padding: 10px;
+    }
     .information {
         margin: 25px;
-        margin-top: -50px;
-        text-align: center;
     }
     .information p {
         font-size: 15px;
@@ -114,5 +206,12 @@ h1 {
     }
     .viewRecipes a {
         font-size: 20px;
+    }
+    .heroRecipes {
+        padding: 70px 20px 35px;
+    }
+    .heroRecipes span {
+        padding: 15px 10px;
+        font-size: 30px;
     }
 }

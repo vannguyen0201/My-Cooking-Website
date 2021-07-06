@@ -7,11 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02a889d03a.js" crossorigin="anonymous"></script>
     <title>Recipes</title>
 </head>
 <body>
+    <nav class="d-flex justify-content-between fixed-top">        
+        <a href="/" title="Homepage">
+        LittleVan's Kitchen
+        </a>
+        <ul>
+        <li>
+            <a href="/" title="Homepage" > Home</a>
+        </li>
+        <li>
+            <a href="/about.html" title="About"> About</a>
+        </li>
+        <li class="active">
+            <a href="/recipes.html" title="Recipes"> Recipes</a>
+        </li>
+        </ul>        
+    </nav>
     <div class="heroRecipes">
-        <h1><span>Our Recipes</span></h1>
+        <h1><span class="rounded shadow">Our Recipes</span></h1>
     </div>
     <div class="container">
         <div class="row mt-5 mb-5 shadow p-2 rounded" id="Pho">
@@ -19,7 +39,7 @@
                 <img src="/images/pho.jpg" alt="Pho" class="img-fluid">
             </div>
             <div class="col-md-8">
-                <h3>Phở</h3>
+                <h3 class="mt-3 mb-4">Phở</h3>
                 <p>This authentic pho isn't quick, but it is delicious. The key is in the broth, which gets simmered for at least 6 hours.</p>
                 <h4>Ingredients</h4>
                 <p>
@@ -41,7 +61,7 @@
                 <img src="/images/banh-mi.jpg" alt="Banh Mi" class="img-fluid">
             </div>
             <div class="col-md-8">
-                <h3>Bánh Mì</h3>
+                <h3 class="mt-3 mb-4">Bánh Mì</h3>
                 <p>A Vietnamese sandwich, made with chicken and full of pickled vegetables.</p>
                 <h4>Ingredients</h4>
                 <p>
@@ -63,7 +83,7 @@
                 <img src="/images/rolls.jpg" alt="Rice Paper Rolls" class="img-fluid">
             </div>
             <div class="col-md-8">
-                <h3>Rice Paper Rolls</h3>
+                <h3 class="mt-3 mb-4">Rice Paper Rolls</h3>
                 <p>You can use almost anything to fill rice paper rolls, from leftover chicken, to all kinds of fresh vegetables.</p>
                 <h4>Ingredients</h4>
                 <p>
@@ -85,7 +105,7 @@
                 <img src="/images/bbh.jpg" alt="Bun bo Hue" class="img-fluid">
             </div>
             <div class="col-md-8">
-                <h3>Spicy Beef Noodles</h3>
+                <h3 class="mt-3 mb-4">Spicy Beef Noodles</h3>
                 <p>It’s a rich and spicy soup with deep layers of flavor. This Central Vietnamese soup is paired with tender slices of beef and pork, then topped with lots of fresh herbs.</p>
                 <h4>Ingredients</h4>
                 <p>
@@ -103,5 +123,64 @@
             </div>
         </div>
     </div>
+    <footer class="container">
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex shadow">
+          <div>
+            <h3>Want to know more?</h3>
+          </div>
+          <div>
+            <a
+              href="mailto:nguyenlevan96@gmail.com"
+              class="btn btn-branding contactMe"
+              title="Contact me"
+            >
+              Get in touch
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+        </div>
+        <div class="text-center d-block d-sm-none mb-5">
+            <a
+              href="mailto:nguyenlevan96@gmail.com"
+              class="btn btn-branding contactMe"
+              title="Contact me"
+            >
+              Get in touch
+            </a>
+          </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://github.com/vannguyen0201"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/levan0201/"
+            target="_blank"
+            title="instragram Profile"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lvng/"
+            target="_blank"
+            title="LinkedIn Profile"
+          >
+          <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">
+          This website was coded by LittleVan, and is
+          <a
+            href="https://github.com/vannguyen0201/My-Cooking-Website"
+            target="_blank"
+          >
+            open-sourced
+          </a>
+        </p>
+      </footer>
 </body>
 </html>
