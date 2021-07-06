@@ -1,5 +1,10 @@
 :root {
     --primary-color: #222831;
+    --secondary-color: #f96d00;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -10,8 +15,11 @@ h1 {
     color: #eeeeee;
     padding: 200px 100px 50px;
     background-image: url("/images/hero-image.jpg");
-    font-family: 'Raleway', sans-serif;
     text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color);
+}
+
+.heroAbout {
+    max-width: 700px;
 }
 
 .more {
@@ -25,6 +33,10 @@ h1 {
     border-color: #eeeeee;
 }
 
+.recipes {
+    font-weight: bolder;
+}
+
 .dish {
     padding: 30px;
     color: var(--primary-color);
@@ -33,6 +45,38 @@ h1 {
 
 .dish:hover {
     opacity: 0.8;
+}
+
+.about {
+    background: var(--primary-color);
+}
+
+.description {
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: -150px;
+    padding: 30px;
+    background: var(--secondary-color);
+    color: #f2f2f2;
+}
+
+.viewRecipes {
+    margin: 50px;
+    text-align: center;
+}
+
+.viewRecipes a {
+    background: var(--primary-color);
+    color: #f2f2f2;
+    transition: all 100ms ease-in-out;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.viewRecipes a:hover {
+    background: var(--secondary-color);
+    color: #f2f2f2;
 }
 
 @media (max-width: 576px) {
