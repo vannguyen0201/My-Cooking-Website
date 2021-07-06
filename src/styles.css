@@ -22,6 +22,19 @@ h1 {
     max-width: 700px;
 }
 
+.heroRecipes {
+    background-image: url("/images/hero-recipes.gif");
+    background-size: 100%;
+    padding: 200px 20px;
+    text-align: center;
+}
+
+.heroRecipes span {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    padding: 20px 40px;
+}
+
 .more {
     text-align: center;
 }
