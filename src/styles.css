@@ -133,7 +133,7 @@ background: var(--secondary-color);
 .about {
     background-image: url("/images/hero-about.jpg");
     background-size: 100%;
-    padding: 200px 20px 50px;
+    padding: 200px 20px 200px;
     text-align: center;
 }
 
@@ -146,9 +146,10 @@ background: var(--secondary-color);
 .information {
     margin: 80px 100px;
     padding: 15px;
+    padding-top: 50px;
     color: var(--primary-color);
     text-align: center;
-    background: var(--secondary-color);
+    background: #f2f2f2;
 }
 
 .information p {
@@ -164,7 +165,7 @@ background: var(--secondary-color);
     background: var(--primary-color);
     color: #f2f2f2;
     transition: all 100ms ease-in-out;
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px;
     border-radius: 10px;
 }
@@ -190,8 +191,7 @@ background: var(--secondary-color);
         font-size: 15px;
     }
     .about {
-        background: var(--primary-color);
-        padding-top: 100px
+        padding: 80px 20px 50px;
     }
     .about span {
         font-size:20px;
